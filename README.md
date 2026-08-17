@@ -58,7 +58,7 @@ docs/
 .github/workflows/maven.yml
 ```
 
-詳細な観測と仮説の切り分けは [デバッグ記録](docs/debugging-record.md) に記載しています。
+詳細な観測と仮説の切り分けは [デバッグ記録](docs/debugging-record.md)、既存教材との比較は [題材重複調査レポート](docs/novelty-report.md) に記載しています。
 
 ## References
 
