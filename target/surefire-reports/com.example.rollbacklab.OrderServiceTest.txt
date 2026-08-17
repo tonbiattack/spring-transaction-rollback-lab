@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.example.rollbacklab.OrderServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.971 s <<< FAILURE! -- in com.example.rollbacklab.OrderServiceTest
+com.example.rollbacklab.OrderServiceTest.rejectedOrderIsNotPersisted -- Time elapsed: 0.822 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+[拒否された注文はトランザクション終了後に残らない] 
+expected: 0
+ but was: 1
+	at com.example.rollbacklab.OrderServiceTest.rejectedOrderIsNotPersisted(OrderServiceTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
