@@ -12,7 +12,7 @@ public class OrderService {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @Transactional
+    @Transactional(rollbackFor = OrderRejectedException.class)
     public void createOrderThenReject(String orderId) throws OrderRejectedException {
         jdbcTemplate.update("insert into orders (id, status) values (?, ?)", orderId, "CREATED");
         throw new OrderRejectedException("在庫確認に失敗したため注文を拒否しました");
